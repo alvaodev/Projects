@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+        function acao1() {
+            alert('Tecla disparada')
+        }
+        
+    </script>
+
+</head>
+<body onscroll="console.log('evento disparado')">
+
+    <!--Evento de mouse-->
+
+    <!--um clique dispara o alerta -->
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;"></div>  
+    <!--dois clique dispara o alerta -->
+    <div ondblclick="acao()" style="background: #676767; height: 150px; width: 150px;"></div>
+    <!--Assim que sortar o clique dispara o alerta -->
+    <div onmouseup="acao()" style="background: #8753; height: 150px; width: 150px;"></div>
+    <!--Passou o mouse em cima dispara o alerta -->
+    <div onmouseover="acao()" style="background: #78dc; height: 150px; width: 150px;"></div>
+    <!--Passou o mouse em cima e tirou de cima dispara o alerta -->
+    <div onmouseout="acao()" style="background: #78dd78; height: 150px; width: 150px;"></div>
+
+    <!--Evento de teclado-->
+    <input onkeydown="acao1()" type="text"/>
+    <input onkeyup="acao1()" type="text"/>
+    <input onkeypress="acao1()" type="text"/>
+
+    <!--Evento de janela-->
+
+    <div style="height: 300px; width: 125px ; background: #ccc;"></div>
+
+    <!--Evento de formulario-->
+
+    <input onfocus="console.log('foco')" onblur="console.log('sem foco')" type="text"/>
+
+    <select onchange="console.log('Estado foi modificado')">
+        <option>-- Selecione --</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+
+
+</body>
+</html>

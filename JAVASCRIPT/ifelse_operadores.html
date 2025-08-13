@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // && se um for false, a operação inteira é falso 
+
+        //true && true && false = false 
+        /* 
+        if(2 == 2 && 3 >=1 && 'a' == 'b') {
+            document.write('Verdadeiro')
+        }
+        else {
+            document.write('Falso')
+        }
+        */
+
+        // || se um for true, a operação inteira sera true 
+
+         /*
+        //true || true || false = true  
+        if(2 == 2 || 3 >=1 || 'a' == 'b') {
+            document.write('Verdadeiro')
+        }
+        else {
+            document.write('Falso')
+        }
+        */
+
+        var nota = prompt('Digite a sua nota:')
+        var faltas = prompt('Digite a qunatidade de faltas:')
+        var media = 7
+        var faltas_maximas = 15
+
+        if(nota >= media && faltas <= faltas_maximas){
+            document.write('Aprovado')
+        }
+
+        else{
+            document.write('Reprovado')
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

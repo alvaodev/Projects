@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/300x300.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+</head>
+<body>  
+    <header>
+         <!--BARRA DE NAVEGAÇÃO-->
+        <a href="http://127.0.0.1:5500/Come%C3%A7o/index.html"><img src="Imagens/Logo_Volocopter.png" alt="" class="logo"></a>
+        <nav class="navegation">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Come%C3%A7o/index.html">Página Inicial</a></li>
+                <li><a href="http://127.0.0.1:5500/Produtos%20e%20Serviços/produtoseserviços.html">Produtos e Serviços</a></li>
+                <li><a href="http://127.0.0.1:5500/Contato/contato.html">Contato</a></li>
+                <li><a href="http://127.0.0.1:5500/Sustentabilidade/sustentabilidade.html">Sustentabilidade</a></li>
+                <li><a href="http://127.0.0.1:5500/Política%20de%20Privacidade/politicadeprivacidade.html">Política de privacidade</a></li>
+                <li><a href="http://127.0.0.1:5500/Política%20de%20Segurança/politicadesegurança.html">Política de segurança</a></li>
+                <li><a href="http://127.0.0.1:5500/Diferenciais/diferenciais.html">Diferenciais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!--Form-->
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="b808c743-3505-4844-9bf3-40a6dd2cf7de">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Contato/obrigado.html">
+        </form>
+    </section>
+</body>
+</html>

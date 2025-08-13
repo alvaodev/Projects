@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function calculo (num1, num2, operacao) {
+            if (operacao === 'soma') {
+                return num1 + num2
+            } else if (operacao === 'subtração') {
+                return num1 - num2
+            } else {
+                return null; //Caso o usuário digite uma operação inválida
+            }
+        }
+
+        //Solicita as entradas do usuário
+        let num1 = parseFloat(prompt('Digite o primeiro número: '));
+        let operacao = prompt('Digite a operação(soma ou subtração): ').toLowerCase();
+        let num2 = parseFloat(prompt('Digite o segundo número: '));
+
+        //Chama a função para calcular
+        let resultado = calculo(num1, num2, operacao);
+
+        //Mostra o resultado
+        if (resultado !== null) {
+            alert('O resultado é: ' + resultado);
+        } else {
+            alert('Operação inválida! Digite apenas soma ou subtração');
+        }
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
